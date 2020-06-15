@@ -1,0 +1,41 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for project Vyznamne Stromy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/server.js",
+    "build": "tsc && echo \"npmECHO: All built, you can start next tasc:\n\"",
+    "fetchCSV": "npm run -s build &&  echo \"npmECHO: Starting fetchCSV:\n\" && node ./dist/fetchCSV.js"
+  },
+  "author": "Lukas Posekany",
+  "license": "ISC",
+  "dependencies": {
+    "@reactivex/rxjs": "^6.5.5",
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/jsonwebtoken": "^8.3.9",
+    "@types/morgan": "^1.9.0",
+    "@types/mysql": "^2.15.10",
+    "@types/npm": "^2.0.31",
+    "bcrypt": "^4.0.1",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.0",
+    "json2csv": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "node-gyp": "^6.1.0",
+    "rxjs": "^6.5.5"
+  },
+  "devDependencies": {
+    "tslint": "^6.1.2"
+  }
+}

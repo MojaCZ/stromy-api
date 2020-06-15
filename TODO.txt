@@ -1,0 +1,2 @@
+check for duplicates on columns where is NOT NULL, it crashes when I want to insert duplicated name
+For now, URLs of obrazoveD and pisemneD are only one, this should be an array, do later
