@@ -1,4 +1,4 @@
-import { PisemneDI } from '../../../lib/src'
+import { PisemneDI } from '../lib/index'
 
 export class PisemneD implements PisemneDI {
   URL: string[] = [];

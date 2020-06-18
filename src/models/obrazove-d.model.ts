@@ -1,4 +1,4 @@
-import { ObrazoveDI } from '../../../lib/src';
+import { ObrazoveDI } from '../lib/index';
 
 export class ObrazoveD implements ObrazoveDI {
   URL: string[] = [];

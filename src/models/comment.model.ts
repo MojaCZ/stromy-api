@@ -1,4 +1,4 @@
-import {CommentI} from '../../../lib/src';
+import {CommentI} from '../lib/index';
 
 export class Comment implements CommentI {
   COM_U: string = "";

@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node ./dist/server.js",
-    "build": "tsc && echo \"npmECHO: All built, you can start next tasc:\n\"",
-    "fetchCSV": "npm run -s build &&  echo \"npmECHO: Starting fetchCSV:\n\" && node ./dist/fetchCSV.js"
+    "build": "tsc"
   },
   "author": "Lukas Posekany",
   "license": "ISC",
@@ -33,9 +32,8 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "node-gyp": "^6.1.0",
-    "rxjs": "^6.5.5"
+    "rxjs": "^6.5.5",
+    "typescript": "^3.9.5"
   },
-  "devDependencies": {
-    "tslint": "^6.1.2"
-  }
+  "devDependencies": {}
 }

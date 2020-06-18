@@ -5,7 +5,7 @@ import { PisemneD } from './pisemne-d.model';
 import { ObrazoveD } from './obrazove-d.model';
 import { Kateg } from './kateg.model';
 import { Ohro } from './ohro.model';
-import { TreeI, StromI, LokalI, PisemneDI, ObrazoveDI, KategI, CommentI, OhroI } from '../../../lib/src';
+import { TreeI, StromI, LokalI, PisemneDI, ObrazoveDI, KategI, CommentI, OhroI } from '../lib/index';
 
 export * from './strom.model';
 export * from './comment.model';

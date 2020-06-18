@@ -1,10 +1,18 @@
-
-
-NODE_ENV=dev
-PORT=8080
-DB_HOST=176.222.224.212
-DB_NAME=stromy
-DB_USER=moja
-DB_PW=4Th,u8U(*]ygE~7G
-
-DB_URL=mongodb://mealAdmin:g9p\KMSG`XxSZ+mY@176.222.224.212:27017/mealPlannerdb?authSource=mealPlannerdb
+version: '3'
+services:
+  stromy-api:
+    container_name: stromy-api
+    build:
+      dockerfile: Dockerfile
+      context: ../stromy-api
+    # networks:
+    #   - local
+    environment:
+      - PORT=8080
+      - DB_HOST=176.222.224.212
+      - DB_NAME=stromy
+      - DB_USER=moja
+      - DB_PW=4Th,u8U(*]ygE~7G
+      - DB_URL=mongodb://mealAdmin:g9p\KMSG`XxSZ+mY@176.222.224.212:27017/mealPlannerdb?authSource=mealPlannerdb
+    ports:
+      - 8080:8080

@@ -2,7 +2,7 @@ import express from 'express';
 import con from '../../dbCon';
 import { Observable, Observer } from 'rxjs';
 import { Tree } from '../../models';
-import { StromI, CommentI, LokalI, PisemneDI, ObrazoveDI, KategI, OhroI } from '../../../../lib/src';
+import { StromI, CommentI, LokalI, PisemneDI, ObrazoveDI, KategI, OhroI } from '../../lib/index';
 
 export function AddTreeUser(req: express.Request, res: express.Response, next: express.NextFunction) {
   console.log('PUT REQUEST HERE: ', req.body)
